@@ -102,7 +102,7 @@
     devProps[@"cordova"] = [[self class] cordovaVersion];
     devProps[@"serial"] = [self getSerialNr];
     devProps[@"isVirtual"] = @NO;
-    devProps[@"isiOSAppOnMac"]: [self isiOSAppOnMac];
+    devProps[@"isiOSAppOnMac"] = @([self isiOSAppOnMac]);
 
     NSDictionary* devReturn = [NSDictionary dictionaryWithDictionary:devProps];
     return devReturn;
